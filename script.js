@@ -7,7 +7,7 @@ document.getElementById("menu-btn").addEventListener("click", () => {
 const preguntasFrecuentes = {
   "¿qué es el sdacp?": "Es el Sistema Distrital de Arte, Cultura y Patrimonio de Bogotá.",
   "¿cómo ser consejero?": "Debes inscribirte a través de las convocatorias abiertas por la SCRD.",
-  "contacto": "Puedes escribirnos a direccionparticipacion@scrd.gov.co."
+  "contacto": "Puedes escribirnos a sistemaparticipacion@scrd.gov.co."
 };
 
 document.getElementById("chat-toggle").addEventListener("click", () => {
