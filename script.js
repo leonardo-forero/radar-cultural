@@ -11,8 +11,9 @@ const preguntasFrecuentes = {
   "contacto": "Puedes escribirnos a sistemaparticipacion@scrd.gov.co."
 };
 
-document.getElementById("chat-toggle").addEventListener("click", () => {
-  document.getElementById("chat-window").classList.toggle("hidden");
+document.getElementById('chat-toggle').addEventListener('click', function () {
+  const chatWindow = document.getElementById('chat-window');
+  chatWindow.classList.toggle('hidden');
 });
 
 document.getElementById("chat-input").addEventListener("keypress", function (e) {

@@ -10,17 +10,36 @@ header {
   color: white;
   padding: 1rem;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
+  position: relative;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
 }
 
 .logos img {
-  height: 50px;
-  margin: 0 10px;
+  height: 100px;
+  margin-left: auto;
 }
-9:36 p. m. 11/05/2025
+
+.logos h1 {
+  flex: none;
+  text-align: center;
+  font-size: 2rem;
+  margin: 0 auto;
+}
+
+/* Menú a la izquierda */
 .menu-container {
-  position: relative;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
 }
 
 #menu-btn {
@@ -33,14 +52,13 @@ header {
 }
 
 #menu {
-  position: relative;
-  top: 60px;
-  left: 20px;
   background: white;
   border: 1px solid #ccc;
   list-style: none;
   padding: 10px;
-  margin: 100;
+  margin-top: 10px;
+  position: absolute;
+  z-index: 1000;
 }
 
 #menu li {
@@ -56,8 +74,11 @@ header {
   display: none;
 }
 
+/* Descripción con imagen a la derecha */
 .descripcion {
   display: flex;
+  flex-direction: row-reverse; /* para que la imagen quede a la derecha */
+  align-items: center;
   padding: 2rem;
   gap: 2rem;
 }
@@ -67,6 +88,7 @@ header {
   border-radius: 10px;
 }
 
+/* Boletines */
 .boletines-grid {
   display: flex;
   flex-wrap: wrap;
@@ -80,13 +102,21 @@ header {
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
+/* Footer */
 footer {
   text-align: center;
   background-color: #6f4c9c;
   padding: 1rem;
   margin-top: 2rem;
+  color: white;
 }
 
+footer img {
+  max-width: 200px;
+  margin-bottom: 1rem;
+}
+
+/* Chat */
 #chatbot {
   position: fixed;
   bottom: 20px;
