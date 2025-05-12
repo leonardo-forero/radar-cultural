@@ -81,26 +81,24 @@ header {
   z-index: 1100;
 }
 
-/* Menú */
+/* Estilos del menú */
 #menu {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background: white;
-  border: 1px solid #ccc;
   list-style: none;
-  padding: 10px;
+  padding: 0;
   margin: 0;
-  z-index: 1000;
 }
 
 #menu li {
-  padding: 10px;
+  padding: 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 #menu li a {
   text-decoration: none;
-  color: #6f4c9c;
+  color: white;
+  display: block;
+  font-weight: bold;
+  font-size: 1.2rem;
 }
 
 /* Descripción con imagen a la derecha */
