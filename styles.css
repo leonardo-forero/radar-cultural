@@ -111,6 +111,12 @@ header {
   margin-left: 260px; /* Evita que el menú cubra el contenido */
 }
 
+/* Estilo para el texto de descripción */
+.descripcion p {
+  font-size: 1.1rem;
+  color: #2c2c3b;
+  line-height: 1.6;
+}
 
 /* Imagen de la descripción de la DALP */
 .descripcion img {
