@@ -114,7 +114,7 @@ header {
 
 /* Imagen de la descripción de la DALP */
 .descripcion img {
-  width: 300px; /* Tamaño máximo */
+  width: 500px; /* Tamaño máximo */
   max-width: 100%;
   border-radius: 10px;
   margin-bottom: 1rem;
@@ -140,7 +140,7 @@ header {
 }
 
 .boletines-grid img {
-  width: 300px;
+  width: 200px;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
@@ -164,7 +164,7 @@ footer {
 
 /* Logos del footer */
 .footer-content img {
-  max-width: 120px;
+  max-width: 75px;
   margin: 10px;
 }
 
