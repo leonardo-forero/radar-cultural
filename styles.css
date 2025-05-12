@@ -56,7 +56,7 @@ header {
   width: 250px;
   height: 100vh;
   background-color: #6f4c9c;
-  padding: 20px;
+  padding: 60px 20px 20px; /* Añadir espacio arriba */
   box-shadow: 2px 0 5px rgba(0,0,0,0.5);
   overflow-y: auto;
   transform: translateX(-100%);
@@ -190,4 +190,43 @@ footer {
   border: none;
   padding: 10px;
   border-top: 1px solid #ccc;
+}
+
+/* Diseño responsivo para móviles */
+@media (max-width: 768px) {
+  .logos h1 {
+    font-size: 1.5rem;
+  }
+
+  .logos img {
+    height: 80px;
+  }
+
+  .descripcion {
+    flex-direction: column;
+    margin-left: 0;
+    padding: 1rem;
+  }
+
+  .descripcion img {
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .boletines-grid {
+    margin-left: 0;
+    padding: 1rem;
+  }
+
+  #boletines h2 {
+    margin-left: 0;
+  }
+  
+  #menu-btn {
+    left: 10px;
+  }
+  
+  .menu-container {
+    width: 200px;
+  }
 }
