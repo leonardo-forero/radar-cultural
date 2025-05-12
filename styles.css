@@ -10,29 +10,30 @@ header {
   color: white;
   padding: 1rem;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   position: relative;
 }
 
 .logos {
   display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 1rem;
   width: 100%;
+  justify-content: center; /* Centra el título */
+  position: relative;
 }
 
 .logos img {
   height: 100px;
-  margin-left: auto;
+  position: absolute;
+  right: 20px; /* Imagen fija a la derecha */
 }
 
 .logos h1 {
-  flex: none;
-  text-align: center;
+  margin: 0;
   font-size: 2rem;
-  margin: 0 auto;
+  text-align: center;
+  width: 100%;
 }
 
 /* Menú a la izquierda */
