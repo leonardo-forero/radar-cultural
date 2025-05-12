@@ -83,8 +83,11 @@ document.addEventListener("DOMContentLoaded", function () {
   // Inicializa el chat con el menú principal
   showMenu();
 
+  // Alternar visibilidad del chat al hacer clic en el botón de toggle
   chatToggle.addEventListener("click", function () {
     chatWindow.classList.toggle("hidden");
+    // Asegurarse de que el chat tenga la clase 'active' para mostrarlo con animación
+    chatWindow.classList.add("active");
   });
 
   chatInput.addEventListener("keypress", function (e) {
