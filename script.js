@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", function () {
 // Menú desplegable
 document.getElementById("menu-btn").addEventListener("click", () => {
   document.getElementById("menu").classList.toggle("hidden");
