@@ -1,3 +1,4 @@
+/* Estilos generales */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -5,6 +6,17 @@ body {
   color: #2c2c3b;
 }
 
+/* Ocultar elementos */
+.hidden {
+  display: none !important;
+}
+
+/* Ajustes para el chat */
+#chat-window.hidden {
+  display: none !important;
+}
+
+/* Encabezado */
 header {
   background-color: #6f4c9c;
   color: white;
@@ -19,14 +31,14 @@ header {
   display: flex;
   align-items: center;
   width: 100%;
-  justify-content: center; /* Centra el título */
+  justify-content: center;
   position: relative;
 }
 
 .logos img {
   height: 100px;
   position: absolute;
-  right: 20px; /* Imagen fija a la derecha */
+  right: 20px;
 }
 
 .logos h1 {
@@ -36,53 +48,67 @@ header {
   width: 100%;
 }
 
-/* Menú a la izquierda */
+/* Menú lateral */
 .menu-container {
-  position: relative;
-  margin-right: auto; /* Botón a la izquierda */
-}
-
-#menu-btn {
-  background: white;
-  color: #6f4c9c;
-  border: none;
-  padding: 8px 12px;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-#menu {
-  position: absolute;
-  top: 100%;  /* Debajo del botón */
-  left: 0;    /* Alineado al borde izquierdo del botón */
-  background: white;
-  border: 1px solid #ccc;
-  list-style: none;
-  padding: 10px;
-  margin: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100vh;
+  background-color: #6f4c9c;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.5);
+  overflow-y: auto;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
   z-index: 1000;
 }
 
+.menu-container.active {
+  transform: translateX(0);
+}
+
+#menu-btn {
+  background-color: #ffb71b;
+  color: #6f4c9c;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1100;
+}
+
+#menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 #menu li {
-  padding: 10px;
+  margin-bottom: 15px;
 }
 
 #menu li a {
+  color: white;
   text-decoration: none;
-  color: #6f4c9c;
+  font-weight: bold;
 }
 
-.hidden {
-  display: none;
+#menu li a:hover {
+  color: #ffb71b;
 }
 
 /* Descripción con imagen a la derecha */
 .descripcion {
   display: flex;
-  flex-direction: row-reverse; /* para que la imagen quede a la derecha */
+  flex-direction: row-reverse;
   align-items: center;
   padding: 2rem;
   gap: 2rem;
+  margin-left: 260px; /* Evita que el menú cubra el contenido */
 }
 
 .descripcion img {
@@ -96,6 +122,7 @@ header {
   flex-wrap: wrap;
   gap: 1rem;
   padding: 1rem;
+  margin-left: 260px; /* Evita que el menú cubra el contenido */
 }
 
 .boletines-grid img {
@@ -111,11 +138,6 @@ footer {
   padding: 1rem;
   margin-top: 2rem;
   color: white;
-}
-
-footer img {
-  max-width: 200px;
-  margin-bottom: 1rem;
 }
 
 /* Chat */

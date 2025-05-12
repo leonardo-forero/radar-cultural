@@ -1,7 +1,14 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Menú desplegable
-  document.getElementById("menu-btn").addEventListener("click", () => {
-    document.getElementById("menu").classList.toggle("hidden");
+  const menuBtn = document.getElementById("menu-btn");
+  const menu = document.getElementById("menu");
+  const chatToggle = document.getElementById("chat-toggle");
+  const chatWindow = document.getElementById("chat-window");
+  const chatInput = document.getElementById("chat-input");
+  const chatMessages = document.getElementById("chat-messages");
+
+  menuBtn.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
   });
 
   // Chat básico con preguntas predeterminadas
@@ -12,22 +19,19 @@ document.addEventListener("DOMContentLoaded", function () {
     "contacto": "Puedes escribirnos a sistemaparticipacion@scrd.gov.co."
   };
 
-  const chatToggle = document.getElementById('chat-toggle');
-  const chatWindow = document.getElementById('chat-window');
-  const chatInput = document.getElementById('chat-input');
-  const chatMessages = document.getElementById('chat-messages');
-
-  chatToggle.addEventListener('click', function () {
-    chatWindow.classList.toggle('hidden');
+  // Mostrar/Ocultar chat
+  chatToggle.addEventListener("click", function () {
+    chatWindow.classList.toggle("hidden");
   });
 
+  // Respuestas automáticas
   chatInput.addEventListener("keypress", function (e) {
-    if (e.key === "Enter") {
-      const input = e.target.value.toLowerCase().trim();
+    if (e.key === "Enter" && chatInput.value.trim() !== "") {
+      const input = chatInput.value.toLowerCase().trim();
       const response = preguntasFrecuentes[input] || "Lo siento, no entiendo tu pregunta aún.";
       chatMessages.innerHTML += `<div><strong>Tú:</strong> ${input}</div>`;
       chatMessages.innerHTML += `<div><strong>Radar:</strong> ${response}</div>`;
-      e.target.value = "";
+      chatInput.value = "";
       chatMessages.scrollTop = chatMessages.scrollHeight;
     }
   });
