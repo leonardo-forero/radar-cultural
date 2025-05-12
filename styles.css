@@ -167,11 +167,11 @@ footer {
 
 /* Tamaños independientes */
 .footer-logo-1 {
-  max-width: 100px;
+  max-width: 120px;
 }
 
 .footer-logo-2 {
-  max-width: 75px;
+  max-width: 200px;
 }
 
 .footer-text p {
