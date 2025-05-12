@@ -247,6 +247,7 @@ footer {
   background-color: #6f4c9c;
   color: #fff;
   border-radius: 15px 15px 0 0;
+  max-height: 300px;
 }
 
 #chat-messages div {
@@ -286,6 +287,8 @@ footer {
   margin: 0 12px 12px 12px;
   background-color: #fff;
   color: #000;
+  position: relative;
+  bottom: 0;
 }
 
 #chat-input::placeholder {
