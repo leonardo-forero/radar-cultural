@@ -148,30 +148,34 @@ header {
 /* Footer */
 footer {
   background-color: #6f4c9c;
-  padding: 1rem;
   color: white;
+  padding: 1rem;
+  margin-top: 2rem;
   text-align: center;
 }
 
-/* Contenedor para logos y texto */
 .footer-content {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
 }
 
-/* Logos del footer */
 .footer-content img {
-  max-width: 120px;
   margin: 10px;
 }
 
-/* Texto del footer */
-.footer-content div {
-  text-align: center;
-  max-width: 300px;
+/* Tamaños independientes */
+.footer-logo-1 {
+  max-width: 100px;
+}
+
+.footer-logo-2 {
+  max-width: 75px;
+}
+
+.footer-text p {
+  margin: 5px 0;
 }
 
 /* Chat */
@@ -252,5 +256,24 @@ footer {
   
   .menu-container {
     width: 200px;
+  }
+
+  /* Ajuste del footer en móviles */
+  footer {
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .footer-content img {
+    max-width: 100px; /* Tamaño máximo de las imágenes en móviles */
+  }
+
+  .footer-content div {
+    max-width: 100%;
+    margin-bottom: 1rem;
   }
 }
