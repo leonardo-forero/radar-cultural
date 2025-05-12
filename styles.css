@@ -33,7 +33,7 @@ header {
 }
 
 #menu {
-  position: absolute;
+  position: relative;
   top: 60px;
   left: 20px;
   background: white;
