@@ -112,7 +112,7 @@ header {
 }
 
 /* Estilo para el texto de descripción */
-.descripcion p {
+.descripcion p, .descripcion ul {
   font-size: 1.1rem;
   color: #2c2c3b;
   line-height: 1.6;
