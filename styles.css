@@ -306,13 +306,14 @@ footer {
 
 /* Efecto de aparición */
 #chat-window {
-  opacity: 0;
-  transform: scale(0.9);
+  display: none; /* El chat no está visible por defecto */
+  opacity: 0; /* El chat es invisible */
+  transition: opacity 0.3s ease-in-out; /* Transición suave */
 }
 
 #chat-window.active {
-  opacity: 1;
-  transform: scale(1);
+  display: block; /* Muestra el chat cuando se activa */
+  opacity: 1; /* Hace el chat visible */
 }
 
 /* Diseño responsivo para móviles */

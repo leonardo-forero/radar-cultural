@@ -85,9 +85,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Alternar visibilidad del chat al hacer clic en el botón de toggle
   chatToggle.addEventListener("click", function () {
-    chatWindow.classList.toggle("hidden");
-    // Asegurarse de que el chat tenga la clase 'active' para mostrarlo con animación
-    chatWindow.classList.add("active");
+    // Alterna la clase 'active' para mostrar el chat
+    chatWindow.classList.toggle("active");
   });
 
   chatInput.addEventListener("keypress", function (e) {
