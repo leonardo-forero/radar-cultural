@@ -192,46 +192,127 @@ footer {
   margin: 5px 0;
 }
 
-/* Chat */
+/* Estilos del chatbot */
+
 #chatbot {
   position: fixed;
   bottom: 20px;
   right: 20px;
+  z-index: 9999;
+  font-family: Arial, sans-serif;
 }
 
+/* Botón de chat */
 #chat-toggle {
   background-color: #6f4c9c;
-  color: white;
+  color: #fff;
   border: none;
   border-radius: 50%;
-  width: 48px;
-  height: 48px;
+  width: 60px;
+  height: 60px;
   font-size: 24px;
   cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
 }
 
+#chat-toggle:hover {
+  transform: scale(1.1);
+  background-color: #5a3b7a;
+}
+
+/* Ventana del chat */
 #chat-window {
-  width: 300px;
-  background: white;
-  border: 1px solid #ccc;
-  position: absolute;
-  bottom: 60px;
-  right: 0;
+  width: 320px;
+  height: 400px;
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  height: 300px;
+  position: relative;
+  transition: all 0.3s ease;
 }
 
+.hidden {
+  display: none;
+}
+
+/* Mensajes del chat */
 #chat-messages {
-  flex: 1;
+  flex-grow: 1;
   padding: 10px;
   overflow-y: auto;
+  background-color: #6f4c9c;
+  color: #fff;
+  border-radius: 15px 15px 0 0;
 }
 
+#chat-messages div {
+  margin-bottom: 10px;
+  padding: 8px 12px;
+  border-radius: 15px;
+  line-height: 1.4;
+  max-width: 90%;
+}
+
+/* Estilos para mensajes de Radar y del usuario */
+#chat-messages div strong {
+  font-weight: bold;
+  color: #ffb71b;
+}
+
+#chat-messages .user-message {
+  background-color: #ffb71b;
+  color: #000;
+  align-self: flex-end;
+  border-radius: 15px 15px 0 15px;
+}
+
+#chat-messages .bot-message {
+  background-color: #6f4c9c;
+  color: #fff;
+  border-radius: 15px 15px 15px 0;
+}
+
+/* Campo de entrada del chat */
 #chat-input {
   border: none;
-  padding: 10px;
-  border-top: 1px solid #ccc;
+  padding: 12px;
+  border-radius: 0 0 15px 15px;
+  font-size: 14px;
+  width: calc(100% - 24px);
+  margin: 0 12px 12px 12px;
+  background-color: #fff;
+  color: #000;
+}
+
+#chat-input::placeholder {
+  color: #aaa;
+}
+
+/* Indicador de escritura */
+#typing-indicator {
+  padding: 5px 10px;
+  font-size: 12px;
+  color: #aaa;
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  margin: 5px 10px;
+  display: flex;
+  align-items: center;
+}
+
+/* Efecto de aparición */
+#chat-window {
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+#chat-window.active {
+  opacity: 1;
+  transform: scale(1);
 }
 
 /* Diseño responsivo para móviles */
