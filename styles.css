@@ -111,9 +111,13 @@ header {
   margin-left: 260px; /* Evita que el menú cubra el contenido */
 }
 
+
+/* Imagen de la descripción de la DALP */
 .descripcion img {
-  max-width: 300px;
+  width: 300px; /* Tamaño máximo */
+  max-width: 100%;
   border-radius: 10px;
+  margin-bottom: 1rem;
 }
 
 /* Título de boletines */
@@ -143,11 +147,31 @@ header {
 
 /* Footer */
 footer {
-  text-align: center;
   background-color: #6f4c9c;
   padding: 1rem;
-  margin-top: 2rem;
   color: white;
+  text-align: center;
+}
+
+/* Contenedor para logos y texto */
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Logos del footer */
+.footer-content img {
+  max-width: 120px;
+  margin: 10px;
+}
+
+/* Texto del footer */
+.footer-content div {
+  text-align: center;
+  max-width: 300px;
 }
 
 /* Chat */
