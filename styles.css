@@ -291,3 +291,27 @@ footer {
     margin-bottom: 1rem;
   }
 }
+
+/* Indicador de escritura */
+#typing-indicator {
+  color: #6f4c9c;
+  font-style: italic;
+  margin: 10px;
+  text-align: left;
+  display: none;
+}
+
+/* Efecto de aparición */
+.typing-active {
+  display: block;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

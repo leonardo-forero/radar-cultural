@@ -64,13 +64,16 @@
     </div>
   </footer>
 
-  <div id="chatbot">
-    <button id="chat-toggle">💬</button>
-    <div id="chat-window" class="hidden">
-      <div id="chat-messages"></div>
-      <input type="text" id="chat-input" placeholder="Escribe tu pregunta..." />
+<div id="chatbot">
+  <button id="chat-toggle">💬</button>
+  <div id="chat-window" class="hidden">
+    <div id="chat-messages"></div>
+    <div id="typing-indicator" class="hidden">
+      <span>Radar está escribiendo...</span>
     </div>
+    <input type="text" id="chat-input" placeholder="Escribe tu pregunta..." />
   </div>
+</div>
 
   <script src="script.js"></script>
 </body>
