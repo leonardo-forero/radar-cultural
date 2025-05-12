@@ -7,8 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     menuContainer.classList.toggle("active");
   });
 
-// Chat con menú anidado y efectos
-document.addEventListener("DOMContentLoaded", function () {
+  // Chat con menú anidado y efectos
   const chatToggle = document.getElementById("chat-toggle");
   const chatWindow = document.getElementById("chat-window");
   const chatInput = document.getElementById("chat-input");
