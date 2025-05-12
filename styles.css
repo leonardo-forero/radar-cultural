@@ -130,6 +130,14 @@ header {
   margin-left: 260px; /* Alinea con el grid */
 }
 
+/* Estilo para el párrafo de descripción en la sección Boletines */
+#boletines p {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  color: #2c2c3b;
+}
+
 /* Boletines */
 .boletines-grid {
   display: flex;
