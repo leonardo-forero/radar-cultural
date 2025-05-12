@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Radar Cultural</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="logos">
+      <img src="assets/logo1.png" alt="Logo 1" />
+      <h1>Radar Cultural</h1>
+      <img src="assets/logo2.png" alt="Logo 2" />
+    </div>
+    <div class="menu-container">
+      <button id="menu-btn">☰ Menú</button>
+    <ul id="menu" class="hidden">
+      <li><a href="https://lookerstudio.google.com/u/1/reporting/afd64586-cc1c-4516-9bab-89389999c0f3/page/f86JF" target="_blank">Tablero Equipo de Participación</a></li>
+      <li><a href="https://lookerstudio.google.com/u/1/reporting/04d62571-d4d6-47af-ada3-ef1cd37df2e8/page/p_c78b0ujcld" target="_blank">Tablero Gestión Documental</a></li>
+      <li><a href="https://www.culturarecreacionydeporte.gov.co/es/seguimiento-SDACP" target="_blank">Tablero SDACP</a></li>
+      <li><a href="https://lookerstudio.google.com/u/1/reporting/e0f2461b-1592-40b2-91a6-23d83e2be52c/page/oA7JF" target="_blank">Tablero Barrios Vivos</a></li>
+      <li><a href="https://leonardo-forero.github.io/estado-consejeria/" target="_blank">Consulta Estado Consejería</a></li>
+      <li><a href="#boletines">Boletines</a></li>
+      <li><a href="directorio.html">Directorio Consejer@s</a></li>
+    </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="descripcion">
+      <img src="assets/direccion-asuntos-locales.jpg" alt="Dirección Asuntos Locales" />
+      <div>
+        <h2>Dirección de Asuntos Locales y Participación</h2>
+        <p>La Dirección de Asuntos Locales y Participación promueve el fortalecimiento de los espacios ciudadanos, impulsa el Sistema Distrital de Arte, Cultura y Patrimonio, y articula la gestión territorial en Bogotá desde la Secretaría de Cultura, Recreación y Deporte.</p>
+      </div>
+    </section>
+
+    <section id="boletines">
+      <h2>Boletines</h2>
+      <div class="boletines-grid">
+        <img src="assets/boletin1.jpg" alt="Boletín 1" />
+        <img src="assets/boletin2.jpg" alt="Boletín 2" />
+        <!-- Agrega más según sea necesario -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <img src="assets/imagen-pie.png" alt="Imagen pie de página" />
+    <p>Contacto: direccionparticipacion@scrd.gov.co | Calle 8 #8-52 | Tel: (601) 3274850</p>
+  </footer>
+
+  <div id="chatbot">
+    <button id="chat-toggle">💬</button>
+    <div id="chat-window" class="hidden">
+      <div id="chat-messages"></div>
+      <input type="text" id="chat-input" placeholder="Escribe tu pregunta..." />
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
