@@ -5,7 +5,7 @@ document.getElementById("menu-btn").addEventListener("click", () => {
 
 // Chat básico con preguntas predeterminadas
 const preguntasFrecuentes = {
-  "Hola": "Hola! Mi nombre es Radarcito y estoy aquí para ayudarte. Dime en qué puedo ayudarte?",
+  "hola": "Hola! Mi nombre es Radarcito y estoy aquí para ayudarte. Dime en qué puedo ayudarte?",
   "¿qué es el sdacp?": "Es el Sistema Distrital de Arte, Cultura y Patrimonio de Bogotá.",
   "¿cómo ser consejero?": "Debes inscribirte a través de las convocatorias abiertas por la SCRD.",
   "contacto": "Puedes escribirnos a sistemaparticipacion@scrd.gov.co."
