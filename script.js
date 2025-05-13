@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
   modal.id = "modal";
   modalClose.id = "modal-close";
   modalClose.innerHTML = "&times;";
-  
+
   modal.appendChild(modalImg);
   modal.appendChild(modalClose);
   document.body.appendChild(modal);
@@ -20,16 +20,18 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
+  // Cerrar modal al hacer clic en la "X"
   modalClose.addEventListener("click", () => {
     modal.classList.remove("active");
   });
 
+  // Cerrar modal al hacer clic fuera de la imagen
   modal.addEventListener("click", (e) => {
     if (e.target === modal) {
       modal.classList.remove("active");
     }
-  });  
-  
+  });
+
   // Menú lateral
   const menuBtn = document.getElementById("menu-btn");
   const menuContainer = document.querySelector(".menu-container");
