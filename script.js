@@ -1,4 +1,35 @@
 document.addEventListener("DOMContentLoaded", function () {
+  // Modal para imágenes de boletines
+  const boletinesImages = document.querySelectorAll(".boletines-grid img");
+  const modal = document.createElement("div");
+  const modalImg = document.createElement("img");
+  const modalClose = document.createElement("span");
+
+  modal.id = "modal";
+  modalClose.id = "modal-close";
+  modalClose.innerHTML = "&times;";
+  
+  modal.appendChild(modalImg);
+  modal.appendChild(modalClose);
+  document.body.appendChild(modal);
+
+  boletinesImages.forEach((img) => {
+    img.addEventListener("click", () => {
+      modalImg.src = img.src;
+      modal.classList.add("active");
+    });
+  });
+
+  modalClose.addEventListener("click", () => {
+    modal.classList.remove("active");
+  });
+
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      modal.classList.remove("active");
+    }
+  });  
+  
   // Menú lateral
   const menuBtn = document.getElementById("menu-btn");
   const menuContainer = document.querySelector(".menu-container");

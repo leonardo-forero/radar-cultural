@@ -319,6 +319,68 @@ footer {
   opacity: 1; /* Hace el chat visible */
 }
 
+/* Estilos para el modal de imágenes */
+.modal {
+  display: none; /* Oculto por defecto */
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.8);
+  padding-top: 60px;
+}
+
+/* Imagen dentro del modal */
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 80%;
+  max-height: 80%;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* Botón para cerrar el modal */
+.modal .close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+.modal .close:hover,
+.modal .close:focus {
+  color: #ffb71b;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Botón para descargar la imagen */
+.download-btn {
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+  background-color: #ffb71b;
+  color: #6f4c9c;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  max-width: 200px;
+}
+
+.download-btn:hover {
+  background-color: #fcae1e;
+  color: #6f4c9c;
+}
+
 /* Diseño responsivo para móviles */
 @media (max-width: 768px) {
   .logos h1 {
