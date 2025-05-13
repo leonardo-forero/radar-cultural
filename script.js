@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const modal = document.createElement("div");
   const modalImg = document.createElement("img");
   const modalClose = document.createElement("span");
-  const modalDownload = document.createElement("button");
+  const modalDownload = document.createElement("a"); // Cambiado de <button> a <a>
 
   modal.id = "modal";
   modalClose.id = "modal-close";
@@ -20,8 +20,9 @@ document.addEventListener("DOMContentLoaded", function () {
   boletinesImages.forEach((img) => {
     img.addEventListener("click", () => {
       modalImg.src = img.src;
+      const filename = img.src.split("/").pop();
       modalDownload.setAttribute("href", img.src);
-      modalDownload.setAttribute("download", img.src.split("/").pop());
+      modalDownload.setAttribute("download", filename);
       modal.classList.add("active");
     });
   });
