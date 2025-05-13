@@ -455,18 +455,29 @@ footer {
 
 /* Diseño responsivo para móviles */
 @media (max-width: 768px) {
-  .logos h1 {
-    font-size: 1.5rem;
-  }
-  
-  .logos h3 {
-    font-size: 1.0rem;
-  }
+.logos {
+  text-align: center;
+  position: relative;
+  padding: 1rem 0;
+}
 
-  .logos img {
-    height: 60px;
-	position: static;
-  }
+.logos h1 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.logos h3 {
+  font-size: 0.8rem;
+  margin: 0.3rem 0;
+}
+
+.logos img {
+  height: 60px;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
 
   .descripcion {
     flex-direction: column;
