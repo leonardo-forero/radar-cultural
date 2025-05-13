@@ -4,18 +4,24 @@ document.addEventListener("DOMContentLoaded", function () {
   const modal = document.createElement("div");
   const modalImg = document.createElement("img");
   const modalClose = document.createElement("span");
+  const modalDownload = document.createElement("button");
 
   modal.id = "modal";
   modalClose.id = "modal-close";
   modalClose.innerHTML = "&times;";
+  modalDownload.id = "modal-download";
+  modalDownload.textContent = "Descargar";
 
   modal.appendChild(modalImg);
   modal.appendChild(modalClose);
+  modal.appendChild(modalDownload);
   document.body.appendChild(modal);
 
   boletinesImages.forEach((img) => {
     img.addEventListener("click", () => {
       modalImg.src = img.src;
+      modalDownload.setAttribute("href", img.src);
+      modalDownload.setAttribute("download", img.src.split("/").pop());
       modal.classList.add("active");
     });
   });

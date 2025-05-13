@@ -420,6 +420,27 @@ footer {
   z-index: 10000;
 }
 
+/* Botón de descarga en el modal */
+#modal-download {
+  position: absolute;
+  bottom: 30px;
+  right: 40px;
+  background-color: #ffb71b;
+  color: #6f4c9c;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 10001;
+  transition: background-color 0.3s ease;
+}
+
+#modal-download:hover {
+  background-color: #e0a017;
+}
+
 /* Diseño responsivo para móviles */
 @media (max-width: 768px) {
   .logos h1 {
