@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Menús del chat
   const menus = {
     main: {
-      message: "Hola, ¿en qué puedo ayudarte? Elige una opción:<br>1) Gestión Documental<br>2) Acerca del SDACP<br>3) Normatividad",
+      message: "Hola, soy tu asistente personal, ¿en qué puedo ayudarte? Elige una opción:<br>1) Gestión Documental<br>2) Acerca del SDACP<br>3) Normatividad",
       options: {
         1: "gestion",
         2: "sdacp",

@@ -29,23 +29,30 @@ header {
 
 .logos {
   display: flex;
-  align-items: center;
-  width: 100%;
-  justify-content: center;
+  flex-direction: column; /* Cambia a columna */
+  align-items: center; /* Centra horizontalmente */
   position: relative;
-}
-
-.logos img {
-  height: 75px;
-  position: absolute;
-  right: 20px;
+  width: 100%;
+  text-align: center;
 }
 
 .logos h1 {
   margin: 0;
-  font-size: 2rem;
-  text-align: center;
-  width: 100%;
+  font-size: 2.5rem;
+  color: white;
+}
+
+.logos h3 {
+  margin: 0.5rem 0 0 0; /* Espacio entre título y subtítulo */
+  font-size: 1.2rem;
+  color: #ffb71b;
+}
+
+/* Ajuste de imagen */
+.logos img {
+  height: 75px;
+  position: absolute;
+  right: 20px;
 }
 
 /* Menú lateral */
