@@ -368,7 +368,7 @@ footer {
   }
 
   .footer-content img {
-    max-width: 100px; /* Tamaño máximo de las imágenes en móviles */
+    max-width: 200px; /* Tamaño máximo de las imágenes en móviles */
   }
 
   .footer-content div {
