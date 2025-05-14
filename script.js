@@ -57,24 +57,37 @@ document.addEventListener("DOMContentLoaded", function () {
   // Menús del chat
   const menus = {
     main: {
-      message: "Hola, soy tu asistente personal, ¿en qué puedo ayudarte? Elige una opción:<br>1) Gestión Documental<br>2) Acerca del SDACP<br>3) Normatividad",
+      message: "Hola, soy tu asistente personal, ¿en qué puedo ayudarte? Elige una opción:<br>1) Normatividad<br>2) Información del SDACP<br>3) Gestión del Conocimiento
+	  ",
       options: {
-        1: "gestion",
+        1: "normatividad",
         2: "sdacp",
-        3: "normatividad"
+        3: "conocimiento"
       }
     },
-    gestion: {
-      message: "Gestión Documental:<br>a) Cómo subir documentos<br>b) Cómo buscar documentos<br>c) Requisitos para carga documental<br>r) Regresar",
+    normatividad: {
+      message: "Normatividad del SDACP:<br>a) Decreto 480 de 2018<br>b) Elecciones Atípicas<br>c) Otros<br>r) Regresar",
       options: {
-        a: "Puedes subir documentos a través del sistema de gestión documental de la SCRD.",
-        b: "Puedes buscar documentos usando el buscador de nuestro sistema.",
-        c: "Los requisitos para carga documental incluyen...",
+        a: "decreto480",
+        b: "atipicas",
+        c: "otros",
         r: "main"
       }
     },
+	
+	decreto480: {
+      message: "Decreto 480 de 2018:<br>a) ¿Qué es el Decreto 480 de 2018?<br>b) ¿Cuál es la estructura del Decreto 480?<br>c) ¿Por qué es importante conocer este Decreto?<br>d) ¿Dónde puedo consultar este Decreto?<br>r) Regresar",
+	  options: {
+        a: "El Decreto 480 de 2018 es el principal reglamento del SDACP. Si bien en la actualidad existen artículos vigentes del Decreto 627 de 2007, como que hablan sobre los principios y políticas del Sistema, es en el Decreto 480 donde se encuentran las normas de juego fundamentales. Así mismo, el Decreto 336 de 2022, introdujo modificaciones importates al Decreto 480, incorporando nuevas disposiciones como el apoyo a la movilidad y la inclusión de los sectores de Hip-Hop y Circo en la Circunscripción local.",
+        b: "El Decreto 480 de 2018 está organizado en 11 capítulos, cada uno compuesto por varios artículos que desarrollan sus disposiciones. Por ejemplo, el Capítulo IV, titulado -Del Consejo de Cultura para Asuntos Locales y de los Consejos Locales de Arte, Cultura y Patrimonio-, establece las funciones y la conformación del Consejo de Cultura de Asuntos Locales (CCAL) y de los Consejos Locales de Arte, Cultura y Patrimonio (CLACP).",
+        c: "Conocer el Decreto 480 de 2018 es fundamental porque establece las normas esenciales que rigen el Sistema Distrital de Arte, Cultura y Patrimonio (SDACP), estructurando su funcionamiento y las relaciones entre los distintos actores involucrados. Adicionalmente, este año estamos en proceso de construcción de un Decreto Único Reglamentario, por lo que conocer la normatividad asociada al Sistema es vital si quieres que tus aportes en la construcción de este nuevo Decreto lleguen al siguiente nivel.",
+		d: "Puedes consultarlo en el siguiente enlace: https://www.alcaldiabogota.gov.co/sisjur/normas/Norma1.jsp?i=80504",
+        r: "main"
+      }
+    },
+	
     sdacp: {
-      message: "Acerca del SDACP:<br>a) Qué es el SDACP<br>b) Cómo ser consejero<br>c) Funciones de los consejeros<br>r) Regresar",
+      message: "Información del SDACP:<br>a) Qué es el SDACP<br>b) Consejos<br>c) Consejeros<br>r) Regresar",
       options: {
         a: "El SDACP es el Sistema Distrital de Arte, Cultura y Patrimonio de Bogotá.",
         b: "Puedes convertirte en consejero participando en las elecciones que se realizan cada 4 años.",
@@ -82,8 +95,8 @@ document.addEventListener("DOMContentLoaded", function () {
         r: "main"
       }
     },
-    normatividad: {
-      message: "Normatividad:<br>a) Decreto 480 de 2018<br>b) Decreto 624 de 2019<br>c) Ley 397 de 1997<br>r) Regresar",
+    conocimiento: {
+      message: "Gestión del Conocimiento:<br>a) Micrositio<br>b) Tableros de Seguimiento<br>c) Otros<br>r) Regresar",
       options: {
         a: "El Decreto 480 de 2018 regula...",
         b: "El Decreto 624 de 2019 establece...",
