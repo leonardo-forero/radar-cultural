@@ -57,8 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Menús del chat
   const menus = {
     main: {
-      message: "Hola, soy tu asistente personal, ¿en qué puedo ayudarte? Elige una opción:<br>1) Normatividad<br>2) Información del SDACP<br>3) Gestión del Conocimiento
-	  ",
+      message: "Hola, soy tu asistente personal, ¿en qué puedo ayudarte? Elige una opción:<br>1) Normatividad<br>2) Información del SDACP<br>3) Gestión del Conocimiento",
       options: {
         1: "normatividad",
         2: "sdacp",
@@ -91,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function () {
       options: {
         a: "consejos",
         b: "consejeros",
-        r: "decreto480"
+        r: "main"
       }
     },
     conocimiento: {
