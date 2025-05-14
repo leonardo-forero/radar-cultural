@@ -87,20 +87,18 @@ document.addEventListener("DOMContentLoaded", function () {
     },
 	
     sdacp: {
-      message: "Información del SDACP:<br>a) Qué es el SDACP<br>b) Consejos<br>c) Consejeros<br>r) Regresar",
+      message: "Información del SDACP:<br>a) Acerca de los Consejos<br>b) Acerca de los Consejeros<br>r) Regresar",
       options: {
-        a: "El SDACP es el Sistema Distrital de Arte, Cultura y Patrimonio de Bogotá.",
-        b: "Puedes convertirte en consejero participando en las elecciones que se realizan cada 4 años.",
-        c: "Los consejeros tienen el rol de representar a la comunidad y velar por el desarrollo cultural.",
+        a: "consejos",
+        b: "consejeros",
         r: "decreto480"
       }
     },
     conocimiento: {
-      message: "Gestión del Conocimiento:<br>a) Micrositio<br>b) Tableros de Seguimiento<br>c) Otros<br>r) Regresar",
+      message: "Gestión del Conocimiento:<br>a) Micrositio<br>b) Tableros de Seguimiento<br>r) Regresar",
       options: {
-        a: "El Decreto 480 de 2018 regula...",
-        b: "El Decreto 624 de 2019 establece...",
-        c: "La Ley 397 de 1997 es la Ley General de Cultura en Colombia.",
+        a: "micrositio",
+        b: "tableros",
         r: "main"
       }
     }
