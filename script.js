@@ -66,11 +66,11 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     },
     normatividad: {
-      message: "Normatividad del SDACP:<br>a) Decreto 480 de 2018<br>b) Elecciones Atípicas<br>c) Otros<br>r) Regresar",
+      message: "Normatividad del SDACP:<br>a) Decreto 480 de 2018<br>b) Elecciones Atípicas<br>c) Decreto Único Reglamentario<br>r) Regresar",
       options: {
         a: "decreto480",
         b: "atipicas",
-        c: "otros",
+        c: "dur",
         r: "main"
       }
     },
@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
         a: "El SDACP es el Sistema Distrital de Arte, Cultura y Patrimonio de Bogotá.",
         b: "Puedes convertirte en consejero participando en las elecciones que se realizan cada 4 años.",
         c: "Los consejeros tienen el rol de representar a la comunidad y velar por el desarrollo cultural.",
-        r: "main"
+        r: "decreto480"
       }
     },
     conocimiento: {
